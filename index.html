@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!-- GRUPO NUMERO 7-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AHORCADO</title> <!-- TITULO DEL ENCABEZADO-->
+    <link rel="stylesheet" href="style.css"> <!-- DOCUMENTO CSS -->
+    <script src="scripts/word-list.js" defer></script> <!-- DOCUMENTO  JS DE PALABRAS--><!-- CAMBIARLO POR BASE DE DATOS-->
+    <script src="scripts/script.js" defer></script> <!-- DOCUMENTO JS FUNCIONALIDAD  -->
+
+        <audio id="errorSound1" src="Sound/Error1.mp3"></audio>
+        <audio id="errorSound2" src="Sound/Error2.mp3"></audio>
+        <audio id="errorSound3" src="Sound/Error3.mp3"></audio>
+        <audio id="errorSound4" src="Sound/Error4.mp3"></audio>
+        <audio id="errorSound5" src="Sound/Error5.mp3"></audio>
+        <audio id="Conseguido" src="Sound/Conseguido.mp3"></audio>
+        
+
+</head>
+<body>
+
+    <div class="game-modal">  <!-- DIV  ES LA PANTALLA QUE SALE CUANDO SE GANA O PIERDE EL JUEGO, TAMBIEN TIENE LA FUNCION DE MANTENER EN EL CENTRO AL CONTENEDOR CLASE: ".container"-->
+        <div class="content">
+            <img src="#" alt="gif">
+            <h4>Vuelve a intentarlo</h4>
+            <p>La palabra correcta era: <b>rainbow</b></p>
+            <button class="play-again">Juega de nuevo</button>
+        </div>
+    </div>
+
+    <div class="container"> <!-- DIV  ES EL CONTENIDO PRINCIPAL DONDE SE PUEDE VER EL TECLADO, LA PALABRA, Y LAS IMAGENES DEL JUEGO-->
+        <div class="hangman-box">
+            <img src="#" draggable="false" alt="hangman-img">
+            <h1>Juego del ahorcado</h1>
+        </div>
+
+        <div class="game-box"> <!-- DIV  DENTRO DEL CONTENEDOR DONDE ESTAN LAS LETRAS EN FORMA DE TACLADO Y OTROS TEXTOS -->
+            <ul class="word-display"></ul>
+            <h4 class="hint-text">Pista: <b></b></h4>
+            <h4 class="guesses-text">Intentos incorrectos: <b></b></h4>
+            <div class="keyboard"></div>
+        </div>
+    </div>
+    
+    <!-- AGREGAR IMAGEN DEL PIE DE PAGINA-->
+    <!-- <div class="pico"><img  src="images/pico.png"></div> --> 
+
+</body>
+</html>
